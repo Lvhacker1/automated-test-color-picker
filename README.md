@@ -10,3 +10,6 @@
 //
 
 next.js is installed but the app is decribed as a SPA with setCurrentPage for navigation.
+
+MainContent.test.tsx/
+- The test on MainContent requires an h2 heading "RGB and Hexadecimal notation" but no content underneath it. This creates an empty section with only a heading.

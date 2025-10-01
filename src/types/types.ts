@@ -26,12 +26,11 @@ export type ColourSystemContent = {
 
 export type PixelContent = {
     title: string;
-    description: string[];
+    descriptions: string[];
 }
 
 export type RGBHexContent = {
     title: string;
-    examples: string[];
 }
 
 export type MainContent = {
