@@ -31,6 +31,7 @@ export type PixelContent = {
 
 export type RGBHexContent = {
     title: string;
+    examples: string[];
 }
 
 export type MainContent = {
