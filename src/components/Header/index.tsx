@@ -1,14 +1,18 @@
-import Link from "next/link"
+'use client'
+import { appTitle, navLinks } from "@/data/data"
+import { HeaderProps, NavLink } from "@/types/types"
 
 
-const Header = () => {
+const Header = ({setCurrentPage}: HeaderProps) => {
     return (
         <header>
-            <h1></h1>
+            <h1>{appTitle.title}</h1>
             <nav>
-                <Link href="/"></Link>
-                <Link href="/rgb"></Link>
-                <Link href="/hex"></Link>
+                {navLinks.map((link: NavLink) => (
+                    <button key={link.page} onClick={() => setCurrentPage(link.page)}>
+                        {link.name}
+                    </button>
+                ))}
             </nav>
         </header>
     )
