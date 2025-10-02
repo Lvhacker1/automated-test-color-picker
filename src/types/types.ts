@@ -41,3 +41,9 @@ export type MainContent = {
     pixel: PixelContent;
     rgbHex: RGBHexContent;
 }
+
+export type ColorPickProps = {
+    color: string;
+    colorHeading: string;
+    onClick: () => void;
+}
