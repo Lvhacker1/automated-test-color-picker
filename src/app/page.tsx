@@ -1,5 +1,6 @@
 'use client'
 import ColorPick from "@/components/ColorPick";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import MainContent from "@/components/MainContent";
 import { Page } from "@/types/types";
@@ -32,6 +33,7 @@ export default function Home() {
       {currentPage === 'hex' && (
         <ColorPick color={hexColor} colorHeading="HEX Background" onClick={generateRandomHex} />
       )}
+      <Footer />
     </>
   );
 }
