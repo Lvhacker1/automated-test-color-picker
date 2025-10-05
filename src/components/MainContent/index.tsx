@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const MainContent = () => {
     return (
-        <main className="p-4 space-y-10 sm:px-20 bg-[whitesmoke] flex flex-col lg:max-w-[1000px] lg:mx-auto">
+        <main className="p-4 space-y-10 sm:px-20 bg-[whitesmoke] flex flex-col lg:max-w-[1000px] lg:mx-auto py-10 lg:border-x-1">
             <div className="text-center space-y-4">
                 <h2 className="text-2xl">{mainContent.title}</h2>
                 <p className="hidden">{mainContent.subtitle}</p>

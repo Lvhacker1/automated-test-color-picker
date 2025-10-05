@@ -5,7 +5,7 @@ import { HeaderProps, NavLink } from "@/types/types"
 
 const Header = ({currentPage, setCurrentPage}: HeaderProps) => {
     return (
-        <header className="flex justify-between items-baseline p-4 bg-[whitesmoke] text-black sm:px-20 lg:w-[1000px] lg:m-auto">
+        <header className="flex justify-between items-baseline p-4 bg-[whitesmoke] text-black sm:px-20 lg:w-[1000px] lg:m-auto border-b-1">
             <div>
             <h1 className="text-2xl md:text-2xl">{appTitle.title}</h1>
             </div>
