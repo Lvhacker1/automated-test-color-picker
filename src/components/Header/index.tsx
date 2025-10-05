@@ -6,7 +6,7 @@ import { HeaderProps, NavLink } from "@/types/types"
 const Header = ({setCurrentPage}: HeaderProps) => {
     return (
         <header>
-            <h2>{appTitle.title}</h2>
+            <h1>{appTitle.title}</h1>
             <nav>
                 {navLinks.map((link: NavLink) => (
                     <button key={link.page} onClick={() => setCurrentPage(link.page)}>
