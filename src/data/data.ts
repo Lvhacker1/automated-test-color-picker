@@ -23,8 +23,6 @@ export const mainContent: MainContent = {
         points: [
             'Start with white and apply colored pigments that absorb light.',
             'White when red, blue and green are combined in their maximum intensities',
-            'rgb(152, 116, 249) (RGB)',
-            '#9874F9 (HEX)'
         ]
     },
     pixel: {
@@ -36,6 +34,10 @@ export const mainContent: MainContent = {
     },
     rgbHex: {
         title: 'RGB and Hexadecimal notation',
+        points: [
+            'rgb(152, 116, 249) (RGB)',
+            '#9874F9 (HEX)'
+        ]
     }
     
 }

@@ -2,6 +2,7 @@ export type Page = 'home' | 'rgb' | 'hex';
 
 export type HeaderProps = {
   setCurrentPage: (page: Page) => void;
+  currentPage: string;
 };
 
 export type NavLink = {
@@ -31,6 +32,7 @@ export type PixelContent = {
 
 export type RGBHexContent = {
     title: string;
+    points: string[];
 }
 
 export type MainContent = {

@@ -4,29 +4,42 @@ import Image from "next/image";
 
 const MainContent = () => {
     return (
-        <main>
-            <div>
-                <h1>{mainContent.title}</h1>
-                <p>{mainContent.subtitle}</p>
-                <Image src={mainContent.image.src} alt={mainContent.image.alt} width={700} height={400} />
+        <main className="p-4 space-y-10 sm:px-20 bg-[whitesmoke] flex flex-col lg:max-w-[1000px] lg:mx-auto">
+            <div className="text-center space-y-4">
+                <h2 className="text-2xl">{mainContent.title}</h2>
+                <p className="hidden">{mainContent.subtitle}</p>
+                <div className="w-full max-w-[800px] mx-auto">
+                    <Image 
+                        src={mainContent.image.src} 
+                        alt={mainContent.image.alt} 
+                        width={1000} 
+                        height={450}
+                        className="w-full h-auto"
+                    />
+                </div>
             </div>
-            <div>
-                <h2>{mainContent.colourSystems.title}</h2>
-                <p>{mainContent.colourSystems.description}</p>
-                <ul>
+            <div className="space-y-2">
+                <h2 className="text-xl">{mainContent.colourSystems.title}</h2>
+                <p className="text-md">{mainContent.colourSystems.description}</p>
+                <ul className="list-disc list-inside text-sm">
                     {mainContent.colourSystems.points.map((point, index) => (
                         <li key={index}>{point}</li>
                     ))}
                 </ul>
             </div>
-            <div>
-                <h2>{mainContent.pixel.title}</h2>
+            <div className="space-y-2">
+                <h2 className="text-xl">{mainContent.pixel.title}</h2>
                 {mainContent.pixel.descriptions.map((desc, index) => (
-                    <p key={index}>{desc}</p>
+                    <p className="text-sm" key={index}>{desc}</p>
                 ))}
             </div>
-            <div>
-                <h2>{mainContent.rgbHex.title}</h2>
+            <div className="space-y-2">
+                <h2 className="text-xl">{mainContent.rgbHex.title}</h2>
+                <ul className="list-disc list-inside text-sm">
+                    {mainContent.rgbHex.points.map((point, index) => (
+                        <li key={index}>{point}</li>
+                    ))}
+                </ul>
             </div>
         </main>
     )

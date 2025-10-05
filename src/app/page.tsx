@@ -24,8 +24,9 @@ export default function Home() {
   }
   
   return (
-    <>
-      <Header setCurrentPage={setCurrentPage} />
+    <div className="flex flex-col min-h-screen">
+      <Header setCurrentPage={setCurrentPage} currentPage={currentPage} />
+      <main className="flex-grow">
       {currentPage === 'home' && <MainContent />}
       {currentPage === 'rgb' && (
         <ColorPick color={rgbColor} colorHeading="RGB Background" onClick={generateRandomRGB} />
@@ -33,7 +34,8 @@ export default function Home() {
       {currentPage === 'hex' && (
         <ColorPick color={hexColor} colorHeading="HEX Background" onClick={generateRandomHex} />
       )}
+      </main>
       <Footer />
-    </>
+    </div>
   );
 }
